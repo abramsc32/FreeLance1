@@ -9,7 +9,7 @@ body{
   margin:0px;
   height: 100vh;
   width: 100%;
-  background-image: url(./images/brightskyline.jpg);
+  background-image: url(/images/brightskyline.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 
