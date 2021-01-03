@@ -1,6 +1,8 @@
 
 body{
   margin:0px;
+ 
+
 }
 
 
@@ -26,16 +28,7 @@ body{
   top:-10vh;
   left: -8vh;
 }
-.pic-container{
-  width: 20vh;
-  height: 20vh;
 
-}
-.pic-container img{
-  width: 35vh;
-  height: 50vh;
-  
-}
 .info-container{
   display: flex;
   flex-direction: column;
@@ -65,9 +58,7 @@ body{
     border-radius: 5px;
     /* text-shadow: 0px 0px 6px rgb(4, 33, 161); */
 }
-.more-info{
-  height: 100vh;
-}
+
 .scroll{
   display: flex;
   box-sizing: border-box;
@@ -92,142 +83,356 @@ body{
 
 
 
+.more-info{
+  height: 100vh;
+  background-image: url(/images/nightnyc.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* html{
-  scroll-behavior: smooth;
 }
-body {
- padding:0;
- margin:0;
- background-image: url("/display/images/sky.jpeg");
- min-height: 2000px; 
- background-attachment: fixed;
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- position: relative;
- min-height: 100vh;
-}  
-
-
-
-.front-page{
-  height: 90vh;
-  flex-flow: row;
+.quote-pic{
+  width: 140vh;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin: auto;
   display: flex;
-
 }
-h1{
-position: absolute;
-margin-left: 16.2%;
-margin-top: 8%;
-height: 20px;
-}
-.chris-pic{
-  width: 20%;
-  margin-top: 14%;
-  margin-left: 12%;
-
+.quote{
+  margin: auto;
+  margin-right: 3.5%;
+  display: flex;
+  width: 100vh;
 }
 
-.chris-pic img{
-  height: 400px;
-
+.pic-container{
+  width: 20vh;
+  height: 20vh;
 }
-.intro {
-    width: 35%;
-    height: 400px;
-    background-color: rgba(82, 76, 76, 0.726);
-    margin-left: 25%;
-
-    margin-right: 20px;
-    margin-top: 14%;
-  }
-
-.divider{
-  height: 100px;
-  width: 100%;
-  background-color: white;
-
-}
+.pic-container img{
+  width: 20vh;
+  height: 25vh;
+  margin-top: 50%;
+  border-radius: 50%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);}
 
 
 
 
 
 
+  @import url(https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700);
 
 
-.btn {
-    line-height: 50px;
-    height: 50px;
+
+  .services-header {
     text-align: center;
-    width: 250px;
-    cursor: pointer;
-    background-color: black;
+    font-size: 4vh;
   }
 
-.btn-three {
-    color: #FFF;
-    transition: all 0.5s;
-    position: relative;
+    .services-header h4{
+      font-family: 'Work Sans', sans-serif;
+
+
+    }
+
+  
+/* Diagnol Boxes*/
+.container{
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  /* grid-template-rows: auto; */
+
+  grid-gap: 0 65px;
 }
-.btn-three::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background-color: rgba(255,255,255,0.1);
-    transition: all 0.3s;
-}
-.btn-three:hover::before {
-    opacity: 0 ;
-    transform: scale(0.5,0.5);
-}
-.btn-three::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0;
-    transition: all 0.3s;
-    border: 1px solid rgba(255,255,255,0.5);
-    transform: scale(1.2,1.2);
-}
-.btn-three:hover::after {
-    opacity: 1;
-    transform: scale(1,1);
+.container .box{
+  height: 44vh;
+  background: #0e1220;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
-.footer{
-  height: 30vh;
-  background-color: pink;
+.container .box:nth-child(2){
+margin-top: 50px;
+}
+
+.container .box:nth-child(3){
+  margin-top: 100px;
+}
+  
+
+
+
+.content{
+  position: relative;
+  padding: 20px;
+}
+.box .content h2{
   position: absolute;
-  width: 100%;
-  margin-top: 3000px;
+  top: -60px;
+  right: 20px;
+  padding: 0;
+  font-size: 10em;
+  color: rgba(255, 255, 255, .05);
+  transition: 0.5s;
+}
+.box:hover .content h2{
+  top: -140px;
+}
+.box .content h3{
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+}
+.box .content p{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 2.3vh;
+}
+.box .content a  {
+  position: relative;
+  margin: 20px 0 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid #fff;
+  display: inline-block;
+  color: #fff;
+  transition: 0.5s;
+  transform: translateY(-40px);
+  opacity: 0;
+  visibility: hidden;
+}
+.box:hover .content a{
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible; 
+}
+.box .content a:hover{
+  color: #000;
+  background: #fff;
+}
 
-} */
+
+
+
+
+
+
+/* Footer */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed{
+  height: 31vh;
+	background: rgba(33, 68, 143, 0.945);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+  /* padding: 55px 50px; */
+  position: relative;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+  margin-top: 5vh;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 20%;
+  margin-top: 5vh;
+
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+.footer-left img{
+  position: absolute;
+  width: 35vh;
+  height: 31vh;
+}
