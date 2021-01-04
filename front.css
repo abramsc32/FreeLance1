@@ -492,5 +492,10 @@ section {
     
 .more-info{
 height: 150vh;
+margin-top: -17px;
+}
+
+.footer-left img{
+  display: none!important;
 }
 }
