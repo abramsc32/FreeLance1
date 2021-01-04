@@ -91,7 +91,6 @@ body{
 
 }
 .quote-pic{
-  width: 140vh;
   margin-right: 10%;
   margin-left: 10%;
   margin: auto;
@@ -102,11 +101,14 @@ body{
   margin-right: 3.5%;
   display: flex;
   width: 100vh;
+  font-size: 1.8vh;
+
 }
 
 .pic-container{
   width: 20vh;
   height: 20vh;
+  margin-right:10vh;
 }
 .pic-container img{
   width: 20vh;
@@ -435,4 +437,60 @@ section {
   position: absolute;
   width: 35vh;
   height: 31vh;
+}
+
+@media (max-width: 700px) {
+  .name-plate img{
+    height: 45vh;
+    width: 45vh;
+    position: relative;
+    top: -11vh;
+    left: 5vh;
+}
+
+  
+  .discover{
+    width: 50vh;
+    font-size: 3vh;
+  }
+  .scroll{
+    width: 40vh;
+    margin-top: 0px;
+  }
+  .container{
+    display: flex;
+    flex-flow: column;
+    width: 45vh;
+    height: 20vh;
+
+  }
+.quote{
+  width: 65vh;
+  height: 10vh;
+  margin: 0px;
+  
+}
+
+.pic-container img{
+  width: 15vh;
+  height: 17vh;
+  margin-top: 20%;
+
+}
+.pic-container {
+
+  margin-right: 0px;
+}
+
+.container .box:nth-child(2){
+  margin-top: 10px;
+  }
+  
+  .container .box:nth-child(3){
+    margin-top: 10px;
+  }
+    
+.more-info{
+height: 150vh;
+}
 }
