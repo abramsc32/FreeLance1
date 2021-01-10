@@ -44,7 +44,7 @@ body{
 }
 .discover{
   overflow: auto;
-  height: 50vh;
+  height: 40vh;
   width: 85vh;
     display: flex;
     justify-content: center;
@@ -249,14 +249,12 @@ section {
 
 .footer-distributed{
 
-  height: 15vh;
+  height: 16vh;
 	background: rgba(33, 68, 143, 0.945);
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	font: bold 16px sans-serif;
-  /* padding: 55px 50px; */
   position: fixed;
   left: 0;
   bottom: 0;
@@ -272,9 +270,7 @@ section {
 
 /* Footer left */
 
-.footer-distributed .footer-left{
-	width: 40%;
-}
+
 
 /* The company logo */
 
@@ -304,19 +300,9 @@ section {
 	color:  inherit;
 }
 
-.footer-distributed .footer-company-name{
-	color:  #222;
-	font-size: 14px;
-	font-weight: normal;
-	margin: 0;
-}
 
 /* Footer Center */
 
-.footer-distributed .footer-center{
-  width: 35%;
-  margin-top: 5vh;
-}
 
 .footer-distributed .footer-center i{
 	background-color:  #33383b;
@@ -375,44 +361,84 @@ section {
 .footer-distributed .footer-right{
   width: 20%;
   margin-top: 5vh;
+}
+
+
+
+.footer-distributed .footer-icons .linkedin-image img{
+	width: 90px;
+  height: 90px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+	
+}
+
+.footer-distributed .footer-center .phone a{
+  text-decoration: none;
+  color: lightseagreen;
 
 }
 
-.footer-distributed .footer-company-about{
-	line-height: 20px;
-	color:  #92999f;
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
+
+
+@media (min-width: 701px){
+  .form-page{
+    margin-top:0px;
+  height: 100vh;
+  width: 100%;
+  background-image: url(/images/brightskyline.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+  .footer-left img{
+    width: 27vh;
+    height: 27vh;
+    position: fixed;
+    left: 10%;
+    top: 77%;
+    transform: translate(-50%);
+    }
+
+  .footer-distributed .footer-left{
+      width: 25%;
+    }
+.footer-distributed .footer-center{
+  width: 37%;
+  height: 15vh;
+  margin-top:2vh;
+  margin-bottom: 2vh;
+  text-transform: uppercase;
+  font: 300 24px sans-serif;
+  letter-spacing: .6px;
+
 }
-
-.footer-distributed .footer-company-about span{
-	display: block;
-	color:  #ffffff;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 20px;
 }
-
-.footer-distributed .footer-icons{
-	margin-top: 25px;
+.footer-distributed .footer-right{
+width: 35%;
+height: 15vh;
 }
+.footer-icons .form-scroll{
+display: flex;
+scroll-behavior: smooth;
+}
+.footer-icons{
+  color: lightseagreen;
+  font-size: 37px;
+}
+.footer-icons p{
+  margin-top: .7vh;
+  margin-left: .7vh;
+}
+.form-scroll img{
+  width: 55px;
+  height: 55px;
 
-.footer-distributed .footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #33383b;
-	border-radius: 2px;
-
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
-
-	margin-right: 3px;
-	margin-bottom: 5px;
+}
+.form-scroll {
+  color:lightseagreen;
+  text-decoration: none;
+  margin-left: 7.5vh;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
@@ -426,15 +452,13 @@ section {
   .name-plate img{
     height: 45vh;
     width: 45vh;
-    position: relative;
-    top: -11vh;
-    left: 5vh;
+   
 }
 
   
   .discover{
     width: 50vh;
-    height: 35vh;
+    height: 38vh;
     font-size: 2.5vh;
     justify-content: center;
     align-content: center;
@@ -447,9 +471,16 @@ section {
   }
   .scroll{
     width: 40vh;
-    margin-top: 0px;
+    margin-top: 5%;
     border-radius: 6px;
 
+  }
+
+  .info-container{
+    flex-direction: unset;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .container{
     display: flex;
@@ -490,7 +521,6 @@ margin-top: -19.5px;
 }
 
 .footer-center{
-  width: 66%!important;
 margin-top: 0%!important;
 font-size: 16px;
 
@@ -499,9 +529,8 @@ font-size: 16px;
   height:45%;
 }
 .footer-right{
-  width: 30%!important;
   margin-top: 0%!important;
-  margin-left: 3%;
+  margin-left: 5.4%;
 }
 
 .footer-left{
@@ -542,6 +571,29 @@ display: none;
   flex-flow: row;
   display: flex;
 }
+.footer-center a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
 
+
+}
+
+@media (min-width: 325px) and ( max-width:376px) {
+.footer-center{
+  width: 95% ;
+}
+.footer-distributed .footer-icons a{
+  width: 37px;
+  height: 37px;
+  font-size: 22px;
+  line-height: 42px;
+}
+.footer-center a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+.footer-right{
+}
 
 }

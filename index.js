@@ -41,7 +41,9 @@ document.addEventListener('click', function (e) {
     let checkIfDone = setInterval(function () {
       let atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
       if (distanceToTop(targetAnchor) === 0 || atBottom) {
-        targetAnchor.tabIndex = '-1';
+        targetAnchor.tabIndex = '-1', '-2';
+
+
         targetAnchor.focus();
   
         if ('history' in window) {
@@ -53,7 +55,7 @@ document.addEventListener('click', function (e) {
   
         }
   
-        clearInterval(checkIfDone);
+        // clearInterval(checkIfDone);
       }
     }, 7000);
   }

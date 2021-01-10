@@ -98,7 +98,38 @@
           <a href="mailto:abramsc32@gmail.com">Email PopUP</a>
      -->
 
+<div class="form-page">
 
+    <h2 id="explore-2" tabindex="-2"></h2>
+
+    <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>   
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Your Role: <select name="role[]" multiple>
+            <option value="leader">Leader</option>
+            <option value="follower">Follower</option>
+          </select></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+
+
+
+
+
+
+
+</div>
     </div>
     <script src="index.js"></script>
 </body>
@@ -113,9 +144,9 @@
     </div>
 
     <div class="footer-center">
-        <div>
+        <div class="phone" >
             <i class="fa fa-phone"></i>
-            <p>+1(347)443-6262</p>
+            <a href="1(347)443-6262">1(347)443-6262</a>
         </div>
 
         <div>
@@ -128,10 +159,14 @@
     <div class="footer-right">
 
         <div class="footer-icons">
-
-            <a href=""><i class="fa fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/chris-letizia-b80244a9/"><i class="fa fa-linkedin"></i></a>
-       
+                <a href="#explore-2" class="form-scroll" data-tab-index="2"><img src="images/formicon.png">               <p>Submit A Form</p> 
+                </a>
+            <div class="linkedin-image">
+            <a href="https://www.linkedin.com/in/chris-letizia-b80244a9/" >
+                <img src="images/linedintransparent.png">
+            </i></a>
+        </div>
+        </div>
 
         </div>
 
